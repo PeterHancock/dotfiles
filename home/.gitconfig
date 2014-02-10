@@ -1,0 +1,30 @@
+[user]
+    name = Peter Hancock
+    email = peter.hancock@gmail.com
+[color]
+    diff=auto
+[core]
+    editor = vi
+    excludesfile = ~/.gitignore
+    autocrlf = input
+[alias]
+    prune-all = !git remote | xargs -n 1 git remote prune
+    graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    who = shortlog -s --
+    new = !git init && git commit --allow-empty -m init
+    cp = cherry-pick
+[gui]
+	fontui = -family \"DejaVu Sans\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"DejaVu Sans Mono\" -size -14 -weight normal -slant roman -underline 0 -overstrike 0
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1244x641+247+131
+	main-window-view = HistoryView
+	history-view-vpane-position = 147
+	file-view-vpane-position = 564

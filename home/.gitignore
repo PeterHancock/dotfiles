@@ -1,0 +1,9 @@
+.svn
+#intellij
+*.iml
+.idea
+#mvn
+target
+#eclipse
+.project
+.settings
