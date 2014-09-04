@@ -19,6 +19,7 @@
     who = shortlog -s --
     new = !git init && git commit --allow-empty -m init
     cp = cherry-pick
+    sf = svn fetch
 [gui]
 	fontui = -family \"DejaVu Sans\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family \"DejaVu Sans Mono\" -size -14 -weight normal -slant roman -underline 0 -overstrike 0
