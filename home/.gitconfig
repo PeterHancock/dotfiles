@@ -29,3 +29,7 @@
 	main-window-view = HistoryView
 	history-view-vpane-position = 147
 	file-view-vpane-position = 564
+[difftool]
+	prompt = false
+[diff]
+	tool = meld
