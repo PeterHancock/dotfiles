@@ -1,0 +1,26 @@
+"*":
+  editor:
+    tabLength: 4
+    softWrapAtPreferredLineLength: true
+    fontSize: 15
+    invisibles: {}
+  "exception-reporting":
+    userId: "3d7d2125-e32a-c227-a11d-4d1ffeab014b"
+  welcome:
+    showOnStartup: false
+  "atom-beautify":
+    _analyticsUserId: "93477946-361d-4260-91ee-5072d27ae6a1"
+  core:
+    disabledPackages: [
+      "tabs-to-spaces"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "MavensMate-Atom":
+    mm_use_keyring: false
+    mm_workspace: [
+      "/home/peter/projects/thunderforce"
+    ]
+  "one-dark-ui": {}
