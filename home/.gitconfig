@@ -3,6 +3,7 @@
     email = peter.hancock@gmail.com
 [color]
     diff=auto
+    status=auto
 [core]
     editor = vi
     excludesfile = ~/.gitignore
