@@ -11,6 +11,9 @@ nmap <silent> \sv :so $MYVIMRC<CR>
 
 set clipboard=unnamedplus
 
+" ctrl-c to yank to clipboard
+vnoremap <C-c> "*y
+
 "set smart indent
 filetype plugin indent on
 set autoindent
