@@ -1,13 +1,17 @@
-# Platform dependent dotfiles
+# Manage dotfiles, etc with stow
+
 
 ## Install
 
-**⚠ DANGEROUS ⚠**
+[https://www.gnu.org/software/stow/](stow)
 
 ```
 cd ~
 git clone https://github.com/PeterHancock/dotfiles
-cd dotfiles && ./install.sh
+~/dotfiles/install.sh
 ```
 
-
+## Run
+```
+dotfiles [pkgname]
+```
