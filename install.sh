@@ -1,8 +1,3 @@
-platform=`uname`
+#!/bin/bash
 
-echo "Installing dotfiles for $platform platform"
-
-for DOTFILE in `find ~/dotfiles/$platform`
-do
- [[ -f "$DOTFILE" ]] && ln -svf $DOTFILE ~
-done
+dotfiles/.bin/dotfiles
