@@ -64,9 +64,6 @@ append_path /usr/local/Cellar/graphicsmagick/1.3.21/bin
 
 append_path `yarn global bin`
 
-# npm i -g  ~/projects/npm-globals and edit ~/.npm-globalsrc
-npm-globals
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
