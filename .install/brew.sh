@@ -9,12 +9,15 @@ apps=(
   coreutils
   git
   git-extras
+  graphicsmagick
   imagemagick
   jq
   python
   stow
   tree
   wget
+  scala
+  sbt
 )
 
 brew install "${apps[@]}"
