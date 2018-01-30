@@ -1,0 +1,9 @@
+BASH="$DOTFILES_DIR/bash"
+
+source "$BASH/env"
+source "$BASH/functions"
+source "$BASH/alias"
+
+dotfiles-sh "$DOTFILES_DIR"
+
+[ -f "$DOTFILES_EXTRA_DIR/extra.bash" ] && source "$DOTFILES_EXTRA_DIR/extra.bash"

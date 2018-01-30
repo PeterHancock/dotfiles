@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# see https://github.com/webpro/dotfiles
+
+SRC_DIR=${1:-$DOTFILES_DIR}
+
+for PKGDIR in `find $SRC_DIR -not -path '*/\.*' -type d -d 1`
+do
+  if [ -d "$PKGDIR/sh" ]
+  then
+    for SH in `find "$PKGDIR/sh"  -type f -d 1`
+    do
+      source $SH
+    done
+  fi
+done

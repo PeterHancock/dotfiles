@@ -2,12 +2,14 @@
 
 # Install dotfiles with stow - http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
-for PKGDIR in `find $DOTFILES_DIR -not -path '*/\.*' -type d -d 1`
+SRC_DIR=${1:-$DOTFILES_DIR}
+
+for PKGDIR in `find $SRC_DIR -not -path '*/\.*' -type d -d 1`
 do
-  if [ -d "$PKGDIR/dot" ]
+  if [ -d "$PKGDIR/home" ]
   then
-    PKGNAME=${PKGDIR#$DOTFILES_DIR/}
+    PKGNAME=${PKGDIR#$SRC_DIR/}
     echo "Installing dotfiles for $PKGNAME"
-    stow --dir=$PKGDIR --target=$HOME dot
+    stow -R --dir=$PKGDIR --target=$HOME home
   fi
 done
