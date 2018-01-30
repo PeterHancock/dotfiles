@@ -2,7 +2,9 @@
 
 # see https://github.com/webpro/dotfiles
 
-export DOTFILES_DIR="$HOME/dotfiles"
+export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+export DOTFILES_EXTRA_DIR
 
 source "$DOTFILES_DIR/env"
 

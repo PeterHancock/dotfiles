@@ -3,6 +3,7 @@
 # Install dotfiles with stow - http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
 SRC_DIR=${1:-$DOTFILES_DIR}
+[ -d "$SRC_DIR" ] || return
 
 for PKGDIR in `find $SRC_DIR -not -path '*/\.*' -type d -d 1`
 do
