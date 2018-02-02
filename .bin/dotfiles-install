@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# see https://github.com/webpro/dotfiles
+
+SRC_DIR=${1:-$DOTFILES_DIR}
+[ -d "$SRC_DIR" ] || return
+
+for PKGDIR in `find $SRC_DIR -not -path '*/\.*' -type d -d 1`
+do
+  [ -f "$PKGDIR/install.sh" ] && source "$PKGDIR/install.sh" "$PKGDIR"
+done

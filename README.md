@@ -1,7 +1,6 @@
-# Manage dotfiles, etc with stow
+# dotfiles
 
-
-## Install
+## <a name-="install"></a>Install
 
 ```
 cd ~
@@ -11,18 +10,20 @@ git clone https://github.com/PeterHancock/dotfiles
 
 ## Extras
 
-Add extra packages to `$HOME/dotfiles-extras` in the usual [format](#format)
+Add extra packages to `$HOME/dotfiles-extras` in the [dotfiles](#dotfiles-layout) layout
 
-## <a name-="format"></a> Format
+## <a name="dotfiles-layout"></a>dotfiles layout
 
 ```
 dotfiles/
-  .<dir> #  ignored
-  <pkg>/
-    home/ #  linked to $HOME
-      <dir>/
-      <file>
-      <file|dir>
-    sh/
-      <script>  # sourced by ~/.bashrc
+  <pkg>/  # directory in dotfiles package layout
+          # <pkg> cannot start with '.'
+```
+
+## <a name="dotfiles-package-layout"></a>dotfiles package layout
+
+```
+  home/       # stowed (i.e. symlinked) to $HOME
+  install.sh  # optional, sourced during dotfiles install
+  rc.sh       # optional, sourced by ~/.bashrc
 ```

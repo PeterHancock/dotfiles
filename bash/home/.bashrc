@@ -16,6 +16,9 @@ else
   return
 fi
 
-source "$DOTFILES_DIR/bash/bashrc"
+source "$DOTFILES_DIR/.rc/bashrc"
 
 unset DOTFILES_DIR
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

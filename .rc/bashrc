@@ -1,0 +1,13 @@
+source "$DOTFILES_DIR/env"
+source "$DOTFILES_DIR/.rc/env"
+source "$DOTFILES_DIR/.rc/functions"
+source "$DOTFILES_DIR/.rc/aliases"
+
+source dotfiles-rc "$DOTFILES_DIR"
+
+if [ -f "$DOTFILES_EXTRA_DIR" ]
+then
+  PATH="$DOTFILES_EXTRA_DIR/.bin:$PATH"
+  [ -f "$DOTFILES_EXTRA_DIR/rc.sh" ] && "$DOTFILES_EXTRA_DIR/rc.sh"
+  source dotfiles-rc "$DOTFILES_EXTRA_DIR"
+fi

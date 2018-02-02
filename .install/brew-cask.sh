@@ -9,6 +9,7 @@ apps=(
   firefox
   google-chrome
   google-chrome-canary
+  google-drive-file-stream
   slack
 )
 
