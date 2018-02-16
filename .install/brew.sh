@@ -6,6 +6,7 @@ brew upgrade
 # Install packages
 
 apps=(
+  aspell
   coreutils
   git
   git-extras
@@ -13,11 +14,11 @@ apps=(
   imagemagick
   jq
   python
+  sbt
+  scala
   stow
   tree
   wget
-  scala
-  sbt
 )
 
 brew install "${apps[@]}"
