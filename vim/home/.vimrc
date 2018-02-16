@@ -58,3 +58,9 @@ let g:jsx_ext_required = 0
 colorscheme Spacegray
 
 :set clipboard=
+
+:set ruler
+
+" Spelling
+" " z= for suggestions
+:command Spell :setlocal spell spelllang=en
