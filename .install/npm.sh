@@ -17,7 +17,7 @@ packages=(
   node-repl
   node-run
   nodemon
-  pen
+  @noraesae/pen
   pkginit
 )
 
