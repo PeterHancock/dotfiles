@@ -19,6 +19,3 @@ fi
 source "$DOTFILES_DIR/.rc/bashrc"
 
 unset DOTFILES_DIR
-
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
