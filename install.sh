@@ -20,12 +20,12 @@ source "$DOTFILES_DIR/z/install.sh"
 source dotfiles-install
 
 # Install dotfiles
-source dotfiles
+source dotfiles-home
 
 if [ -d "$DOTFILES_EXTRA_DIR" ]
 then
   PATH="$DOTFILES_EXTRA_DIR/.bin:$PATH"
-  source dotfiles $DOTFILES_EXTRA_DIR
+  source dotfiles-home $DOTFILES_EXTRA_DIR
   [ -f "$DOTFILES_EXTRA_DIR/install.sh" ] && source "$DOTFILES_EXTRA_DIR/install.sh"
   source dotfiles-install $DOTFILES_EXTRA_DIR
 else
