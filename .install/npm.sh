@@ -14,6 +14,7 @@ packages=(
   http-server
   lerna
   marked
+  nd
   node-repl
   node-run
   nodemon

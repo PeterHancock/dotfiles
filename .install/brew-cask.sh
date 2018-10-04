@@ -5,6 +5,7 @@ brew tap caskroom/fonts
 # Install packages
 
 apps=(
+  java8
   atom
   firefox
   google-chrome

@@ -5,18 +5,23 @@ brew upgrade
 
 # Install packages
 
+brew install coreutils gnu-getopt gnu-sed --with-default-names
+
 apps=(
   aspell
   coreutils
   git
   git-extras
   graphicsmagick
+  hugo
   imagemagick
   jq
+  maven
   python
   sbt
   scala
   stow
+  tomcat
   tree
   wget
 )
