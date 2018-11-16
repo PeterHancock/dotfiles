@@ -16,7 +16,9 @@ apps=(
   hugo
   imagemagick
   jq
+  kotlin
   maven
+  mr
   python
   sbt
   scala

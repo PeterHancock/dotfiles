@@ -1,3 +1,5 @@
+# TIP: debug with bash -xf
+
 # Resolve DOTFILES_DIR (assuming ~/.dotfiles on distros without readlink and/or $BASH_SOURCE/$0)
 
 export DOTFILES_DIR
@@ -19,3 +21,4 @@ fi
 source "$DOTFILES_DIR/.rc/bashrc"
 
 unset DOTFILES_DIR
+
