@@ -13,6 +13,7 @@
     graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
     st = status
     ci = commit
+    ca = commit --amend --no-edit
     br = branch
     brname = rev-parse --abbrev-ref HEAD
     brsort = branch --sort=committerdate
