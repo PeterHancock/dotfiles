@@ -37,8 +37,8 @@ vnoremap <C-c> "*y
 "set smart indent
 filetype plugin indent on
 set autoindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set nowrap  "don't warp lines
 set backspace=indent,eol,start  "allow backspacing over everything
