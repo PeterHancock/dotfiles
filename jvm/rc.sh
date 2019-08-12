@@ -18,3 +18,6 @@ function setjdk() (
       export PATH=$JAVA_HOME/bin:$PATH
   fi
 )
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"

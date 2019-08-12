@@ -15,6 +15,7 @@ apps=(
   graphicsmagick
   hugo
   imagemagick
+  jenv
   jq
   kotlin
   maven
