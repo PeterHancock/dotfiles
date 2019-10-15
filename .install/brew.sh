@@ -5,11 +5,18 @@ brew upgrade
 
 # Install packages
 
-brew install coreutils gnu-getopt gnu-sed --with-default-names
+brew install coreutils gnu-getopt gnu-sed
+
+
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
+
+brew cask install adoptopenjdk
 
 apps=(
   aspell
   coreutils
+  fzf
   git
   git-extras
   graphicsmagick
@@ -24,9 +31,24 @@ apps=(
   sbt
   scala
   stow
+  tmux
+  tmuxinator
   tomcat
   tree
   wget
 )
 
 brew install "${apps[@]}"
+
+apps=(
+  adoptopenjdk
+  iterm2
+  atom
+  firefox
+  google-chrome
+  google-drive-file-stream
+  slack
+  visual-studio-code
+)
+
+brew cask install "${apps[@]}"
