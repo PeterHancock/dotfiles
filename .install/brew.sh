@@ -15,6 +15,7 @@ brew cask install adoptopenjdk
 
 apps=(
   aspell
+  bash-completion
   coreutils
   fzf
   git
@@ -28,6 +29,7 @@ apps=(
   maven
   mr
   python
+  reattach-to-user-namespace # Used with tmux
   sbt
   scala
   stow

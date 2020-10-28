@@ -14,7 +14,7 @@
     st = status
     ci = commit
     ca = commit --amend --no-edit
-    br = branch
+    br = branch --sort=-committerdate
     brname = rev-parse --abbrev-ref HEAD
     brsort = branch --sort=committerdate
     brsortrev = branch --sort=-committerdate
@@ -30,6 +30,7 @@
     logtree = log --graph --pretty=format:'%h%n' --abbrev-commit
     merged = "!git branch --merged | grep  -v '\\*\\|master\\|staging'"
     brs = log --oneline --decorate --all --graph --simplify-by-decoration
+    cln = clean -fd
 
 [diff]
 	tool = kdiff3

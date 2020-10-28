@@ -1,0 +1,3 @@
+codep () {
+    code -a `pbpaste`
+}
