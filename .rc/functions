@@ -1,3 +1,7 @@
 codep () {
     code -a `pbpaste`
 }
+
+kill-server () {
+    lsof -ti tcp:$1 | xargs kill
+}
