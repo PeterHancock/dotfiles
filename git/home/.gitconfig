@@ -29,6 +29,7 @@
     tabs = grep -n  '        '
     logtree = log --graph --pretty=format:'%h%n' --abbrev-commit
     merged = "!git branch --merged | grep  -v '\\*\\|master\\|staging'"
+    clean-merged = "!git merged | xargs -n 1 git branch -d"
     brs = log --oneline --decorate --all --graph --simplify-by-decoration
     cln = clean -fd
 
