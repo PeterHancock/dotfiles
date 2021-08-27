@@ -48,3 +48,5 @@
 	tool = kdiff3
 [merge]
     tool = kdiff3
+[pull]
+	ff = only
