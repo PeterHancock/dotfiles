@@ -8,9 +8,9 @@ export DOTFILES_EXTRA_DIR
 
 source "$DOTFILES_DIR/env"
 
-#source "$DOTFILES_DIR/.install/macos.sh"
-#source "$DOTFILES_DIR/.install/brew.sh"
-source "$DOTFILES_DIR/.install/gem.sh"
+source "$DOTFILES_DIR/.install/macos.sh"
+source "$DOTFILES_DIR/.install/brew.sh"
+# source "$DOTFILES_DIR/.install/gem.sh"
 source "$DOTFILES_DIR/.install/npm.sh"
 source "$DOTFILES_DIR/.install/basher.sh"
 

@@ -1,3 +1,3 @@
 PATH="$PATH:$HOME/.basher/bin"
 
-eval "$(basher init -)"
+eval "$(basher init - bash)"
