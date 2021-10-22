@@ -7,11 +7,10 @@ brew upgrade
 
 brew install coreutils gnu-getopt gnu-sed
 
-
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
-brew cask install adoptopenjdk
+brew install --cask adoptopenjdk
 
 apps=(
   aspell
@@ -21,17 +20,13 @@ apps=(
   git
   git-extras
   graphicsmagick
-  hugo
   imagemagick
   jenv
-  jq
   kotlin
   maven
   mr
   python
   reattach-to-user-namespace # Used with tmux
-  sbt
-  scala
   stow
   tmux
   tmuxinator
@@ -45,12 +40,10 @@ brew install "${apps[@]}"
 apps=(
   adoptopenjdk
   iterm2
-  atom
-  firefox
   google-chrome
   google-drive-file-stream
   slack
   visual-studio-code
 )
 
-brew cask install "${apps[@]}"
+brew install --cask "${apps[@]}"
