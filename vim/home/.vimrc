@@ -3,18 +3,18 @@ set nocompatible
 
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+"execute pathogen#infect()
+"syntax on
+"filetype plugin indent on
 
 " https://github.com/junegunn/vim-plug
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
 
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+"Plug '/usr/local/opt/fzf'
+"Plug 'junegunn/fzf.vim'
 
-call plug#end()
+"call plug#end()
 
 " netrw (e.g. :Vex)
 let g:netrw_banner = 0
@@ -58,7 +58,7 @@ let g:jsx_ext_required = 0
 
 :set termguicolors
 
-colorscheme Spacegray
+"colorscheme Spacegray
 
 :set clipboard=
 

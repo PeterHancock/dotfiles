@@ -1,26 +1,7 @@
-if ! is-executable brew -o ! is-executable git; then
-  echo "Skipped: npm (missing: brew and/or git)"
-  return
-fi
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
-brew install nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 nvm install stable
 nvm use --delete-prefix stable
-
-# Globally install with npm
-packages=(
-  JSONStream
-  babel-cli
-  commitizen
-  http-server
-  lerna
-  marked
-  nd
-  node-repl
-  node-run
-  nodemon
-  @noraesae/pen
-  pkginit
-)
-
-npm install -g "${packages[@]}"
